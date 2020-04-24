@@ -1,0 +1,21 @@
+body {
+    background-image: url('img/about.jpg');
+  }
+
+.profile{
+    width: 450px;
+    height: 520px;
+    background:slategray;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color:white;
+}
+
+.box{
+border-radius: 50%;
+width: 250px;
+height: 250px;
+}
+
