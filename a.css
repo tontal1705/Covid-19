@@ -37,3 +37,20 @@ font-weight: bold;
 *{
     font-family: 'K2D', sans-serif;
 }
+
+.profile{
+    width: 450px;
+    height: 520px;
+    background:gray;
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: darkgray;
+}
+
+.box{
+border: radius 50%;
+width: 250px;
+height: 250px;
+}
