@@ -18,7 +18,7 @@
     function undisable_country() {
       document.getElementById("country").disabled = false;
     }
-    </script>
+  </script>
 
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top fontnav">
@@ -53,117 +53,117 @@
 
     </div>
   </nav>
-  <form action="index.html"  >
+  <form action="index.html">
     <font color="white">
-  <div class="box">
-    <B>
-      <H3>แบบสอบถามสำหรับคัดกรองโรคไวรัสโคโรน่า(COVID-19)</H3>
-      <H4>Screening questionnaire Covid-19</H4> 
-    </B>
-  </div>
-  <div class="box1">
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-6">ชื่อ: <input type="text" name="firstname" required></div>
-
-        <div class="col-6">นามสกุล: <input type="text" name="Lastname" required></div>
-        <br><br>
-
-        <div class="col-6">ชื่อเล่น: <input type="text" name="surname" required></div>
-
-        <div class="col-6">National ID: <input type="text" name="national" required></div>
-        <br><br>
-
-
-        <div class="col-6"><input type="radio" name="follow"
-            value="ผู้ถือหุ้นหรือผู้มอบฉันทะ" required>ผู้ถือหุ้นหรือผู้มอบฉันทะ&nbsp&nbsp
-          <input type="radio" name="follow" value="ผู้ติดตาม" required>ผู้ติดตาม</div>
-
-        <div class="col-6">เบอร์โทรศัพท์: <input type="text" name="number" required></div>
-        <br><br>
+      <div class="box">
+        <B>
+          <H3>แบบสอบถามสำหรับคัดกรองโรคไวรัสโคโรน่า(COVID-19)</H3>
+          <H4>Screening questionnaire Covid-19</H4>
+        </B>
       </div>
+      <div class="box1">
+        <div class="container">
 
-    </div>
+          <div class="row">
 
-  </div>
+            <div class="col-6">ชื่อ: <input type="text" name="firstname" required></div>
+
+            <div class="col-6">นามสกุล: <input type="text" name="Lastname" required></div>
+            <br><br>
+
+            <div class="col-6">ชื่อเล่น: <input type="text" name="surname" required></div>
+
+            <div class="col-6">National ID: <input type="text" name="national" required></div>
+            <br><br>
 
 
-  <div class="box2">
-    ในปัจจุบันคุณมีอาการดังนี้ใช่หรือไม่ โปรดระบุ:<br><br>
+            <div class="col-6"><input type="radio" name="follow" value="ผู้ถือหุ้นหรือผู้มอบฉันทะ"
+                required>ผู้ถือหุ้นหรือผู้มอบฉันทะ&nbsp&nbsp
+              <input type="radio" name="follow" value="ผู้ติดตาม" required>ผู้ติดตาม</div>
 
-    <div class="container">
+            <div class="col-6">เบอร์โทรศัพท์: <input type="text" name="number" required></div>
+            <br><br>
+          </div>
 
-      <div class="row">
-
-        <div class="col-9">1.ไอ/เจ็บคอ </div>
-
-        <div class="col-3">
-          <input type="radio" name="systom1" value="ใช่" required>ใช่&nbsp&nbsp
-          <input type="radio" name="systom1" value="ไม่ใช่" required>ไม่ใช่ </div>
-        <br><br>
-
-        <div class="col-9">2.มีน้ำมูก </div>
-        <div class="col-3">
-          <input type="radio" name="systom2" value="ใช่" required>ใช่&nbsp&nbsp
-          <input type="radio" name="systom2" value="ไม่ใช่" required>ไม่ใช่ </div>
-        <br><br>
-
-        <div class="col-9">3.หายใจเหนื่อย หรือหายใจลำบาก </div>
-        <div class="col-3">
-          <input type="radio" name="systom3" value="ใช่" required>ใช่&nbsp&nbsp
-          <input type="radio" name="systom3" value="ไม่ใช่" required>ไม่ใช่</div>
-        <br><br>
-
-        <div class="col-9">4.คุณมีอาการใดๆที่มีอยู่ซึ่งจะทำให้ระบบภูมิคุ้มกันของคุณอ่อนแอลง </div>
-        <div class="col-3">
-          <input type="radio" name="systom4" value="ใช่" required>ใช่&nbsp&nbsp
-          <input type="radio" name="systom4" value="ไม่ใช่" required>ไม่ใช่</div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="box2">
-    ในช่วง 14 วันที่ผ่านมา คุณเดินทางไปประเทศใดๆ ด้านล่างหรือไม่ ? โปรดระบุ: &nbsp;
-    <input type="radio" name="place" value="ใช่" onclick="undisable_country()" required>ใช่
-    <input type="radio" name="place" value="ไม่ใช่" onclick="disable_country()" required>ไม่ใช่
-    <br><br>
-    ประเทศ: <select id="country" name="country" disabled="disabled">
-      <option value="" selected disabled>--เลือก--
-      <option value="จีน">จีน</option>
-      <option value="มาเก๊า">มาเก๊า</option>
-      <option value="ฮ่องกง">ฮ่องกง</option>
-      <option value="เกาหลีใต้">เกาหลีใต้</option>
-      <option value="อิตาลี">อิตาลี</option>
-      <option value="อิหร่าน">อิหร่าน</option>
-      <option value="อเมริกา">อเมริกา</option>
-      <option value="สเปน">สเปน</option>
-      </select>
-  </div>
-
-  <div class="box2">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-9">
-          ในช่วง 14 วันที่ผ่านมาคุณสัมผัสใกล้ชิดกับคนที่มาจากพื้นที่มีรายงานการระบาดต่อเนื่องของโรค COVID-19
-        หรือมีประวัติใกล้ชิด หรือสัมผัสผู้ป่วยเข้าข่าย หรือยืนยัน โรคติดเชื้อ COVID-19 หรือไม่
         </div>
-        
-        <div class="col-3">
-          <input type="radio" name="systom4" value="ใช่" required>ใช่&nbsp&nbsp
-          <input type="radio" name="systom4" value="ไม่ใช่" required>ไม่ใช่</div>
-        </div>
-        
+
       </div>
-    </div>
-  </div>
-  <div class="submit"><input type = "reset"  value="รีเซต"/>
-  <input type="submit" value="ตกลง" ></div> 
+
+
+      <div class="box2">
+        ในปัจจุบันคุณมีอาการดังนี้ใช่หรือไม่ โปรดระบุ:<br><br>
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-9">1.ไอ/เจ็บคอ </div>
+
+            <div class="col-3">
+              <input type="radio" name="systom1" value="ใช่" required>ใช่&nbsp&nbsp
+              <input type="radio" name="systom1" value="ไม่ใช่" required>ไม่ใช่ </div>
+            <br><br>
+
+            <div class="col-9">2.มีน้ำมูก </div>
+            <div class="col-3">
+              <input type="radio" name="systom2" value="ใช่" required>ใช่&nbsp&nbsp
+              <input type="radio" name="systom2" value="ไม่ใช่" required>ไม่ใช่ </div>
+            <br><br>
+
+            <div class="col-9">3.หายใจเหนื่อย หรือหายใจลำบาก </div>
+            <div class="col-3">
+              <input type="radio" name="systom3" value="ใช่" required>ใช่&nbsp&nbsp
+              <input type="radio" name="systom3" value="ไม่ใช่" required>ไม่ใช่</div>
+            <br><br>
+
+            <div class="col-9">4.คุณมีอาการใดๆที่มีอยู่ซึ่งจะทำให้ระบบภูมิคุ้มกันของคุณอ่อนแอลง </div>
+            <div class="col-3">
+              <input type="radio" name="systom4" value="ใช่" required>ใช่&nbsp&nbsp
+              <input type="radio" name="systom4" value="ไม่ใช่" required>ไม่ใช่</div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="box2">
+        ในช่วง 14 วันที่ผ่านมา คุณเดินทางไปประเทศใดๆ ด้านล่างหรือไม่ ? โปรดระบุ: &nbsp;
+        <input type="radio" name="place" value="ใช่" onclick="undisable_country()" required>ใช่
+        <input type="radio" name="place" value="ไม่ใช่" onclick="disable_country()" required>ไม่ใช่
+        <br><br>
+        ประเทศ: <select id="country" name="country" disabled="disabled">
+          <option value="" selected disabled>--เลือก--
+          <option value="จีน">จีน</option>
+          <option value="มาเก๊า">มาเก๊า</option>
+          <option value="ฮ่องกง">ฮ่องกง</option>
+          <option value="เกาหลีใต้">เกาหลีใต้</option>
+          <option value="อิตาลี">อิตาลี</option>
+          <option value="อิหร่าน">อิหร่าน</option>
+          <option value="อเมริกา">อเมริกา</option>
+          <option value="สเปน">สเปน</option>
+        </select>
+      </div>
+
+      <div class="box2">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-9">
+              ในช่วง 14 วันที่ผ่านมาคุณสัมผัสใกล้ชิดกับคนที่มาจากพื้นที่มีรายงานการระบาดต่อเนื่องของโรค COVID-19
+              หรือมีประวัติใกล้ชิด หรือสัมผัสผู้ป่วยเข้าข่าย หรือยืนยัน โรคติดเชื้อ COVID-19 หรือไม่
+            </div>
+
+            <div class="col-3">
+              <input type="radio" name="systom4" value="ใช่" required>ใช่&nbsp&nbsp
+              <input type="radio" name="systom4" value="ไม่ใช่" required>ไม่ใช่</div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+      <div class="submit"><input type="reset" value="รีเซต" />
+        <input type="submit" value="ตกลง"></div>
     </font>
-</form >
+  </form>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
