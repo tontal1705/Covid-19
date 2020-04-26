@@ -7,11 +7,35 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="a.css">
+  
   <title>Index</title>
 </head>
 
 <body>
+<script>
+  $(function () {
 
+    var url = "https://pomber.github.io/covid19/timeseries.json";
+
+    $.getJSON(url, function (result) {
+
+        var no = 1;
+        for (var country in result) {
+
+            var row = `<tr>
+                        <th scope="row">${no}</th>
+                        <td>
+                        <a href="country.html?country=${country}">${country}</a>
+                        </td>
+                    </tr>`;
+
+            $("#data").append(row);
+            no++;
+
+        }
+
+    });
+  </script>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top fontnav">
     <a class="navbar-brand" href="index.html">COVID-19</a>
@@ -56,14 +80,12 @@
         <div class="carousel-caption d-none d-md-block">
           <B>
             <font color="red">
-              <h5>COVID-19</h5>
+              <h5>ยอดผู้ป่วย COVID-19</h5><br>
+              <a href="country.html"><input type="button" value="CLICK"  style="width:120px;height:80px"></a>
             </font>
           </B>
-          <B>
-            <font color="black">
-              <h4>อยู่บ้าน หยุดเชื้อ เพื่อชาติ</h4>
-            </font>
-          </B>
+
+         
         </div>
       </div>
       <div class="carousel-item" data-interval="2000">
@@ -71,7 +93,8 @@
         <div class="carousel-caption d-none d-md-block">
           <B>
             <font color="red">
-              <h5>ก่อนออกจากบ้าน อย่าลืม!!!</h5>
+              <h5>อยู่บ้าน หยุดเชื้อ เพื่อชาติ</h5>
+              <h4>ก่อนออกจากบ้าน อย่าลืม!!!</h4>
             </font>
           </B>
           <B>
@@ -99,12 +122,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-
     </ul>
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"></script>
@@ -114,6 +132,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"></script>
+      
 </body>
 
 </html>
